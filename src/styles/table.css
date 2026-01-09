@@ -1,0 +1,145 @@
+.content {
+  flex: 1;
+  padding: 20px;
+  background: #fafafa;
+}
+
+.content-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  ;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+}
+
+.actions input {
+  border-radius: 8px;
+  padding: 6px 12px;
+  border: 1px solid #ddd;
+  width: 350px;
+}
+
+.btn-red {
+  background: #dc3545;
+  color: #fff;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 9px;
+}
+
+.btn-outline {
+  border: 1px solid #dc3545;
+  background: #dc3545;
+  color: #fff;
+  padding: 6px 12px;
+  border-radius: 9px;
+}
+
+.voucher-table {
+  width: 100%;
+  background: #fff;
+  border-radius: 6px;
+  color: grey;
+}
+
+.voucher-table th,
+.voucher-table td {
+  padding: 12px;
+  border-bottom: 1px solid #eee;
+  border-right: 1px solid #eee;
+  font-size: 14px;
+  font-style: regular;
+  color: #434343;
+  font-family: roboto,sans-serif;
+  line-height: 28.8px;
+  font-weight: 400;
+  letter-spacing: 0%;
+}
+
+.voucher-table th {
+  border: 1px solid #eee;
+  color: #9F9E9E;
+  font-size: 15px;
+}
+.column-header{
+  color: grey;
+}
+
+.status-switch-green .form-check-input {
+  width: 30px;
+  height: 15px;
+}
+
+.status-switch-green .form-check-input:checked {
+  background-color: #1EE19F;
+  border-color: #1EE19F;
+}
+
+.status-switch-green .form-check-input:focus {
+  border-color: #1EE19F;
+  box-shadow: 0 0 0 0.25rem rgba(30, 225, 159, 0.25);
+}
+
+ .voucher-actions-dropdown .dropdown-toggle::after {
+   display: none;
+ }
+
+ .voucher-actions-menu.dropdown-menu {
+   width: 110px;
+   height: 72px;
+   border: 2px solid #e6e6e6;
+   border-radius: 8px;
+   box-shadow: 0 18px 30px rgba(0, 0, 0, 0.18);
+   overflow: hidden;
+  
+   margin-left: 10px;
+ }
+
+ .voucher-actions-item.dropdown-item {
+   padding: 8px 12px;
+   background: #ffffff;
+ }
+
+ .voucher-actions-item--delete.dropdown-item {
+   background: #f6dede;
+ }
+
+ .voucher-actions-item.dropdown-item:hover,
+ .voucher-actions-item.dropdown-item:focus {
+   color: inherit;
+   background: inherit;
+ }
+
+ .voucher-actions-item__row {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   width: 100%;
+ }
+
+ .voucher-actions-item__label {
+   font-family: roboto, sans-serif;
+   font-size: 14px;
+   line-height: 16px;
+   margin-top:-16px ;
+   font-weight: 400;
+ }
+
+ .voucher-actions-item--view .voucher-actions-item__label {
+   color: #a6a6a6;
+   font-weight: 400;
+ }
+
+ .voucher-actions-item--delete .voucher-actions-item__label {
+   color: #111111;
+ }
+
+ .voucher-actions-item__chev {
+   font-size: 16px;
+   line-height: 1;
+   color: #a6a6a6;
+ }

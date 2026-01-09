@@ -1,0 +1,48 @@
+.top-header {
+  height: 60px;
+  background: #e30613;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  color: #fff;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.search-box,
+.search-box input,
+.search-box .form-control,
+.search-box .input-group {
+  width: 400px;
+  margin-right: 20px;
+  border-radius: 8px !important;
+  border: none !important;
+  background-color: #e30613 !important;
+}
+
+.search-box .input-group-text {
+  border-radius: 8px 0 0 8px !important;
+  border: none !important;
+  background-color: #e30613 !important;
+  color: white !important;
+}
+
+.search-box .form-control::placeholder {
+  color: white !important;
+}
+
+.header-icons {
+  position: absolute;
+  right: 10px;
+  top: 15px;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.avatar {
+  border-radius: 50%;
+}

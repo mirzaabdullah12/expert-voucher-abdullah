@@ -1,0 +1,319 @@
+{
+  "project": {
+    "name": "Change-Able",
+    "version": "0.0.0",
+    "type": "React Dashboard Application",
+    "description": "A modern dashboard application with sidebar navigation and header"
+  },
+  "components": {
+    "sidebar": {
+      "name": "Sidebar",
+      "path": "src/components/Sidebar.jsx",
+      "menuItems": [
+        {
+          "id": "dashboard",
+          "icon": "bi-grid-3x3-gap",
+          "label": "Dashboard",
+          "active": false,
+          "route": "/dashboard"
+        },
+        {
+          "id": "calendar",
+          "icon": "bi-calendar3",
+          "label": "Calendar",
+          "active": false,
+          "route": "/calendar"
+        },
+        {
+          "id": "users",
+          "icon": "bi-people",
+          "label": "Users",
+          "active": false,
+          "route": "/users"
+        },
+        {
+          "id": "messages",
+          "icon": "bi-envelope",
+          "label": "Messages",
+          "active": false,
+          "route": "/messages"
+        },
+        {
+          "id": "calls",
+          "icon": "bi-telephone",
+          "label": "Calls",
+          "active": false,
+          "route": "/calls"
+        },
+        {
+          "id": "products",
+          "icon": "bi-box",
+          "label": "Products",
+          "active": false,
+          "route": "/products"
+        },
+        {
+          "id": "settings",
+          "icon": "bi-gear",
+          "label": "Settings",
+          "active": true,
+          "route": "/settings"
+        },
+        {
+          "id": "documents",
+          "icon": "bi-file-text",
+          "label": "Documents",
+          "active": false,
+          "route": "/documents"
+        },
+        {
+          "id": "analytics",
+          "icon": "bi-bar-chart",
+          "label": "Analytics",
+          "active": false,
+          "route": "/analytics"
+        },
+        {
+          "id": "organization",
+          "icon": "bi-building",
+          "label": "Organization",
+          "active": false,
+          "route": "/organization"
+        },
+        {
+          "id": "files",
+          "icon": "bi-folder",
+          "label": "Files",
+          "active": false,
+          "route": "/files"
+        },
+        {
+          "id": "notifications",
+          "icon": "bi-speaker",
+          "label": "Notifications",
+          "active": false,
+          "route": "/notifications"
+        },
+        {
+          "id": "reports",
+          "icon": "bi-sigma",
+          "label": "Reports",
+          "active": false,
+          "route": "/reports"
+        }
+      ],
+      "styling": {
+        "backgroundColor": "transparent",
+        "iconColor": "red",
+        "width": "80px",
+        "border": "right border",
+        "height": "100vh"
+      }
+    },
+    "header": {
+      "name": "Header",
+      "path": "src/components/Header.jsx",
+      "elements": {
+        "logo": "Expert",
+        "searchBox": {
+          "placeholder": "Search here...",
+          "icon": "FaSearch"
+        },
+        "headerIcons": [
+          "FaBell",
+          "FaCog"
+        ],
+        "languageOptions": [
+          "UK ▾",
+          "ENG ▾"
+        ],
+        "profileImage": "https://i.pravatar.cc/40"
+      }
+    },
+    "vouchers": {
+      "name": "Vouchers",
+      "path": "src/pages/Vouchers.jsx",
+      "data": [
+        {
+          "id": 1,
+          "name": "Birthday Gift",
+          "amount": 500,
+          "date": "2025-01-01",
+          "status": "active",
+          "description": "Monthly grocery shopping voucher"
+        },
+        {
+          "id": 2,
+          "name": "Birthday Gift",
+          "amount": 1000,
+          "date": "2025-01-02",
+          "status": "active",
+          "description": "Fine dining restaurant voucher"
+        },
+        {
+          "id": 3,
+          "name": "Birthday Gift",
+          "amount": 750,
+          "date": "2025-01-03",
+          "status": "expired",
+          "description": "Clothing and accessories voucher"
+        },
+        {
+          "id": 4,
+          "name": "Birthday Gift",
+          "amount": 2000,
+          "date": "2025-01-04",
+          "status": "active",
+          "description": "Flight and hotel booking voucher"
+        },
+        {
+          "id": 5,
+          "name": "Birthday Gift",
+          "amount": 300,
+          "date": "2025-01-05",
+          "status": "active",
+          "description": "Movies and events voucher"
+        },
+        {
+          "id": 6,
+          "name": "Birthday Gift",
+          "amount": 1500,
+          "date": "2025-01-06",
+          "status": "pending",
+          "description": "Online courses and books voucher"
+        },
+        {
+          "id": 7,
+          "name": "Birthday Gift",
+          "amount": 800,
+          "date": "2025-01-07",
+          "status": "active",
+          "description": "Gym membership and wellness services voucher"
+        },
+        {
+          "id": 8,
+          "name": "Birthday Gift",
+          "amount": 400,
+          "date": "2025-01-08",
+          "status": "active",
+          "description": "Pet supplies and veterinary services voucher"
+        },
+        {
+          "id": 9,
+          "name": "Birthday Gift",
+          "amount": 1200,
+          "date": "2025-01-09",
+          "status": "expired",
+          "description": "Home repair and improvement supplies voucher"
+        }
+      ],
+      "columns": [
+        {
+          "key": "id",
+          "label": "ID",
+          "type": "number"
+        },
+        {
+          "key": "name",
+          "label": "Voucher Name",
+          "type": "text"
+        },
+        {
+          "key": "amount",
+          "label": "Amount",
+          "type": "currency"
+        },
+        {
+          "key": "date",
+          "label": "Date",
+          "type": "date"
+        },
+        {
+          "key": "status",
+          "label": "Status",
+          "type": "badge"
+        },
+        {
+          "key": "description",
+          "label": "Description",
+          "type": "text"
+        }
+      ]
+    }
+  },
+  "styles": {
+    "sidebar": {
+      "path": "src/styles/sidebar.css",
+      "properties": {
+        "iconColor": "red !important"
+      }
+    },
+    "header": {
+      "path": "src/styles/header.css"
+    },
+    "table": {
+      "path": "src/styles/table.css"
+    },
+    "layout": {
+      "path": "src/styles/layout.css"
+    }
+  },
+  "dependencies": {
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "react-bootstrap": "^2.10.10",
+    "bootstrap": "^5.3.3",
+    "bootstrap-icons": "^1.11.3",
+    "react-icons": "^5.5.0",
+    "react-router-dom": "^7.11.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.36.0",
+    "@types/react": "^19.1.16",
+    "@types/react-dom": "^19.1.9",
+    "@vitejs/plugin-react": "^5.0.4",
+    "eslint": "^9.36.0",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "eslint-plugin-react-refresh": "^0.4.22",
+    "globals": "^16.4.0",
+    "vite": "npm:rolldown-vite@7.1.14"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint .",
+    "preview": "vite preview"
+  },
+  "development": {
+    "server": {
+      "url": "http://localhost:5173",
+      "status": "running"
+    },
+    "buildTool": "Vite (rolldown-vite)",
+    "hotReload": "enabled"
+  },
+  "fileStructure": {
+    "src": {
+      "components": [
+        "Header.jsx",
+        "Sidebar.jsx"
+      ],
+      "styles": [
+        "header.css",
+        "sidebar.css",
+        "table.css",
+        "layout.css"
+      ],
+      "data": [
+        "projectData.json"
+      ],
+      "App.jsx": "Main application component",
+      "main.jsx": "Application entry point"
+    },
+    "public": {},
+    "index.html": "HTML template",
+    "package.json": "Project configuration",
+    "vite.config.js": "Vite configuration"
+  },
+  "lastUpdated": "2025-01-06T01:12:00Z"
+}
